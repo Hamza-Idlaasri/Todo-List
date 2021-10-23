@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(2, 0, 36);
+    background-color: rgb(236, 222, 253);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#todo {
+    width: 350px;
+    height: 75%;
+    margin-top: 50px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgb(156, 156, 156);
+}
+
+#todo h2 {
+    text-align: center;
+}
+
+#task {
+    width: 75%;
+    padding: 10px;
+    margin: 10px;
+    border: 0px;
+    border-bottom: 1px rgb(185, 185, 185) solid;
+    color: grey;
+    outline: none;
+    font-size: 16px;
+}
+
+h2 {
+    width: 100%;
+    background: linear-gradient(135deg, rgba(135, 65, 255, 1) 0%, rgba(221, 63, 255, 1) 100%);
+    color: white;
+    padding: 15px 0;
+    border-radius: 10px 10px 0 0;
+}
+
+#add {
+    padding: 5px;
+    background: transparent;
+    color: rgba(7, 73, 154, 1);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#add:hover {
+    background: rgb(236, 222, 253);
+    box-shadow: 0px 0px 5px rgb(191, 191, 191);
+    border-radius: 2px;
+}
+
+h4 {
+    margin: auto;
+    width: 85%;
+    cursor: pointer;
+    padding: 10px 5px;
+}
+
+h4 button {
+    float: right;
+    padding: 0 5px;
+    background: none;
+    color: grey;
+    outline: none;
+    border: 0;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+h4:hover button {
+    visibility: visible;
+}
+
+h4:hover {
+    background-color: rgb(236, 222, 253);
+}
+
+#list {
+    min-width: 350px;
+    padding: 10px 0px;
+    height: 60%;
+    overflow: auto;
+}
+
+.done {
+    opacity: 0.3;
+    text-decoration: line-through;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: rgb(216, 216, 216);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(135, 65, 255, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(135, 65, 255);
+}
